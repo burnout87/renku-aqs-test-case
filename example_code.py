@@ -1,11 +1,11 @@
 #from astropy.coordinates import SkyCoord
-import astroquery.legacysurvey
+import astroquery.desi
 
 #astroquery.legacysurvey.LegacySurvey.query_object_async(SkyCoord(83,22, unit="deg"))
 
-print(astroquery.legacysurvey.LegacySurvey.query_object)
+print(astroquery.desi.DESILegacySurvey.query_object)
 
-r = astroquery.legacysurvey.LegacySurvey.query_object("ActualAstroObject")
+r = astroquery.desi.DESILegacySurvey.query_object("ActualAstroObject")
 
 print("astroquery returns:", r)
 
